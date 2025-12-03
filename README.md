@@ -147,7 +147,6 @@ ProductItem {
     Product product (transient)
 }
 ```
-![bills_endpoint](images/bills_endpoint.png)
 
 **Key Features:**
 - Feign clients for inter-service communication
@@ -359,32 +358,8 @@ curl http://localhost:8080/billing-service/API/bills/1 | json_pp
 ```
 
 **Expected Response:**
-```json
-{
-  "id": 1,
-  "billingDate": "2024-12-03T10:30:00.000+00:00",
-  "customerId": 1,
-  "customer": {
-    "id": 1,
-    "name": "Ayoub",
-    "email": "Ayoub@gmail.com"
-  },
-  "productItems": [
-    {
-      "id": 1,
-      "productId": 1,
-      "quantity": 15,
-      "price": 450000.50,
-      "product": {
-        "id": 1,
-        "name": "Smart Phone",
-        "price": 1200.0,
-        "quantity": 10
-      }
-    }
-  ]
-}
-```
+
+![bills_endpoint](images/bills_endpoint.png)
 
 ### Test Circuit Breaker
 
