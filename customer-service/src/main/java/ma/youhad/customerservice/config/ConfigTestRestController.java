@@ -12,9 +12,9 @@ import java.util.Map;
 @RestController
 @RefreshScope
 public class ConfigTestRestController {
-    @Value("${global.params.p1}")
+    @Value("${app.global.p1}")
     private String p1;
-    @Value("${global.params.p2}")
+    @Value("${app.global.p2}")
     private String p2;
     @Value("${spring.datasource.url}")
     private String url;
