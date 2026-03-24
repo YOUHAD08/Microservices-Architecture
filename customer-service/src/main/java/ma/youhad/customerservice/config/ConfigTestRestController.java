@@ -12,13 +12,13 @@ import java.util.Map;
 @RestController
 @RefreshScope
 public class ConfigTestRestController {
-    @Value("${app.global.p1}")
+    @Value("${app.global.p1:default-value}")
     private String p1;
-    @Value("${app.global.p2}")
+    @Value("${app.global.p2:default-value}")
     private String p2;
-    @Value("${spring.datasource.url}")
+    @Value("${spring.datasource.url:default-value}")
     private String url;
-    @Value("${spring.cloud.discovery.enabled}")
+    @Value("${spring.cloud.discovery.enabled:default-value}")
     private String enabled;
 
     @Autowired
